@@ -2,10 +2,6 @@ require_relative "../lib/bike"
 
 describe Bike do 
 	
-# it "knows that a new bike is not broken" do
-# expect(Bike.new).to be_false
-# end
-
 it "knows that a new bike is not broken" do
 bike = Bike.new
 expect(bike).not_to be_broken
@@ -17,10 +13,11 @@ bike.break
 expect(bike).to be_broken
 end
 
-it "knows that a broken bike is broken" do
+it "knows how to fix a bike as well" do
 bike = Bike.new
-expect(bike.break).to be_true
+bike.break
+bike.fix
+expect(bike).not_to be_broken
 end
-
 
 end
