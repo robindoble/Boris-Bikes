@@ -11,4 +11,16 @@ bike = Bike.new
 expect(bike).not_to be_broken
 end
 
+it "knows that a broken bike is broken" do
+bike = Bike.new
+bike.break
+expect(bike).to be_broken
+end
+
+it "knows that a broken bike is broken" do
+bike = Bike.new
+expect(bike.break).to be_true
+end
+
+
 end
