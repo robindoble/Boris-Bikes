@@ -8,6 +8,11 @@ describe DockingStation do
 	let(:bike) {Bike.new}
 	let(:station) {DockingStation.new(:capacity => 20)}
 
+	it "should accept a bike" do
+	station = double :station
+	bike = double :bike
+	expectio
+
 	# def fill_station(station)
 	# 	20.times {station.dock(Bike.new)}
 	# end

@@ -13,9 +13,10 @@ def initialize(options={})
 	self.capacity = options.fetch(:capacity, capacity)	
 end
 
-# station = DockingStation.new(:capacity => 20)
-# puts station.capacity
-# # puts station.bike_count
+station = DockingStation.new(:capacity => 20)
+puts station.capacity
+# station.bikes
+puts station.bike_count
 # 10.times {station.dock(Bike.new)}
 # puts station.bike_count
 # puts station.full?
